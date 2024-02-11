@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.comments {
+  width: 100%;
+  background-color: #aa7b51;
+  margin-top: 50px;
+
+  /* height: 400px; */
+}
+.comments h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.pager {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 30px auto;
+    align-items: center;
+
+}
+.pager div {
+    width: 30px;
+    height:30px;
+    background-color: #FFFFFFB2;
+    border-radius: 100%;
+}
+.pager div:nth-child(3) {
+    width: 58px;
+    height: 58px;
+    
+}
+
+.comments-card {
+  background-color: white;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin: 0px auto;
+  padding: 40px;
+  padding-left: 60px;
+  border-radius: 10px;
+}
+.comments-card p {
+    font-weight: 500;
+}
+
+.comments-card  div {
+    display: flex;
+    align-items: center;
+}
+.comments-card div div {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    
+}
+.comments-card div img {
+    width: 78px;
+    height: 78px;
+    border-radius: 100%;
+    margin-right:20px;
+}
+
+.comments-card .job-title {
+    font-weight: 600;
+}
+/*TABLET SIZE*/
+@media(max-width:716px) {
+    .comments-card {
+        width: 80%;
+    }
+    .pager {
+        width: 70%;
+    }
+}
+/*MOBILE-SIZE*/
+@media(max-width:450px) {
+    .comments-card {
+        width: 100%;
+        margin:0px;
+    }
+    .pager {
+        width: 90%;
+    }
+}
